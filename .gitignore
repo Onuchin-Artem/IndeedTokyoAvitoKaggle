@@ -1,0 +1,13 @@
+*.pyc
+datasets/raw/*
+datasets/submission/*
+datasets/sandbox/*
+venv
+*~
+.#*
+*#
+*.jar
+target
+.idea
+*.iml
+.DS_Store

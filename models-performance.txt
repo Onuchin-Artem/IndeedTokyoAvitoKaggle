@@ -1,0 +1,14 @@
+Model1	All columns, all categories except histCTR	0.051102420843769994
+Model2	Manual minimal feature selection	0.050881612309504706
+Model3	A lot of date functions	0.050957150295856526
+Model4 	only hour and weekday 	0.05082579142885421
+Model5	non-linear histCTR	0.05088570909452413
+Model6	split params	0.05105119833860653
+Model7	Raw params + split params	0.050812998626304846
+Model8	Removed	0.05089982274928258
+Model9	Bag of word v0	0.050907534945828344
+Model10	Set of word	0.05089537540436518
+Model11	Bigrams + fixed a bug in params	0.05068472142270254
+Model12	trigrams and skip Bigrams	0.050503518891657086
+Model13	price is zero, price order	0.0504711934116744
+Model14	search region and city	0.05040177742554414

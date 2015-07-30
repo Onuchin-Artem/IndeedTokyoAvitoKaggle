@@ -1,0 +1,27 @@
+---
+title: "Deep features"
+output: html_document
+---
+```{r}
+library(dplyr)
+library(Matrix)
+```
+
+```{r}
+train <- read.csv("./datasets/sandbox/phoneUserStream.tsv", header = TRUE, sep = "\t", stringsAsFactors=FALSE)
+
+users <- train %>%
+  select(UserID) %>% 
+  distinct %>% 
+  mutate(users_idx = row_number())
+ads <- train %>% 
+  select(AdID) %>% 
+  distinct %>% 
+  mutate(ads_idx = row_number())
+
+train_idx <- train %>%
+  inner_join(users, by='UserID') %>%
+
+
+relationsMatrix <- sparseMatrix(i = train_idx$users_idx, j = train_idx$ads_idx, x=1)
+```

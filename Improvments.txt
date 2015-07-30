@@ -1,0 +1,16 @@
+Improvments:
+1. Manual Feature selection (throw out constants)
+2. Date features (hourOfDay, hourOfWeek, day of week, dayOfYear, percentageOfMonth)
+3. Split params
+4. Title, Query, - nlp (ngrams, skip ngrams, stopwords?)
+5. HistCTR - nonlinear
+6. Multiply user, ip by category, ad, params
+7. price binninhg, multiply price by category or params, make  binning based on per category distribution
+8. Per SearchId feature (was there any clicks in this search (excluding ad we look)).
+9. Location's regions
+10. User historical features
+11. Phone requests stream's users historical features
+12. hyperparameter tunning (bayesian optimization)
+13. Calibration
+14. Sorting train set in different ways and avaraging models
+
